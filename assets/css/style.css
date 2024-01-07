@@ -108,6 +108,7 @@ img {
 
   .navbar-brand img {
     border: 8px solid var(--color-brand);
+    border-radius: 27%;
   }
   /*CONTENT WRAPPER */
   #content-wrapper {
