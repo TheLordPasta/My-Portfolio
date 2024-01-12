@@ -90,11 +90,11 @@
             <div class="col-md-4" data-aos="fade-up">
               <div class="service p-4 bg-base rounded-4 shadow-effect">
                 <div class="iconbox rounded-4">
-                  <i class="las la-feather">
+                  <i class="las la-gamepad la-lg la-spin">
                   </i>
                 </div>
-                  <h5 class="mt-4 mb-2">UX Design</h5>
-                  <p>I craft high-preforming and delightful experiences tailored and conversion-focused</p>
+                  <h5 class="mt-4 mb-2">Game Development</h5>
+                  <p>I develop <span class="fw-bold text-brand">high-performing</span> games using Unity and Godot engines</p>
                   <a href="#" class="link-custom">Read More</a>
                 </div>
               </div>
@@ -102,10 +102,10 @@
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="service p-4 bg-base rounded-4 shadow-effect">
                   <div class="iconbox rounded-4">
-                    <i class="las la-pencil-ruler">
+                    <i class="las la-file-code la-lg">
                     </i>
                   </div>
-                    <h5 class="mt-4 mb-2">Branding</h5>
+                    <h5 class="mt-4 mb-2">SW Development</h5>
                     <p>I craft high-preforming and delightful experiences tailored and conversion-focused</p>
                     <a href="#" class="link-custom">Read More</a>
                   </div>
@@ -114,11 +114,11 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                     <div class="iconbox rounded-4">
-                      <i class="las la-laptop-code">
+                      <i class="las la-layer-group la-lg" font-size="100%">
                       </i>
                     </div>
-                      <h5 class="mt-4 mb-2">Web Designing</h5>
-                      <p>I craft high-preforming and delightful experiences tailored and conversion-focused</p>
+                      <h5 class="mt-4 mb-2">Full-Stack</h5>
+                      <p>BLANK</p>
                       <a href="#" class="link-custom">Read More</a>
                     </div>
                   </div>
@@ -294,22 +294,25 @@
             </div>
 
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-              <form action="#" class="row g-lg-3 gy-3">
-
+              <form action="https://api.web3forms.com/submit" method="POST" id="form" class="row g-lg-3 gy-3">
+                <input type="hidden" name="access_key" value="651559df-61f6-4a20-89f8-f04f2bf114f4" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Enter your name">
+                  <input type="text" class="form-control" placeholder="Enter your name" required name="name">
                 </div>
 
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <input type="email" class="form-control" placeholder="Enter your email" required name="email">
                 </div>
 
                 <div class="form-group col-12">
-                  <input type="text" class="form-control" placeholder="Enter subject">
+                  <input type="text" class="form-control" placeholder="Enter subject" required name="subject">
                 </div>
 
                 <div class="form-group col-12">
-                  <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
+                  <textarea name="message" rows="4" class="form-control" placeholder="Enter your message" required></textarea>
                 </div>
 
                 <div class="form-group col-12">
