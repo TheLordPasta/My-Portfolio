@@ -113,7 +113,7 @@ img {
     border-radius: 27%;
   }
   /*TEMPORARY*/
-  .box {
+  .color-ibox {
     position: relative;
     width: 200px;
     height: 200px;
@@ -126,8 +126,8 @@ img {
     border-radius: 27%;
 }
 
-.box::before,
-.box::after {
+.color-ibox::before,
+.color-ibox::after {
     content: '';
     z-index: -1;
     position: absolute;
@@ -144,7 +144,7 @@ img {
     animation: border 12s linear infinite;
 }
 
-.box::after {
+.color-ibox::after {
     filter: blur(50px);
 }
 
@@ -157,7 +157,7 @@ img {
         background-position: 300%;
     }
 }
-  /*//TEMPORARY*/
+  /*//color-container*/
   /*CONTENT WRAPPER */
   #content-wrapper {
     padding-left: var(--sidebar-width);
