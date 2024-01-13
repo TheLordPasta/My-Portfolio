@@ -110,53 +110,44 @@ img {
   .navbar-brand img {
     width: 200px;
     height: 200px;
-    border-radius: 27%;
+    border-radius: 10px;
   }
+
   /*TEMPORARY*/
-  .color-ibox {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    color: #fff;
-    background: #151320;
-    font: 700 2rem 'Montserrat';
-    line-height: 400px;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 27%;
+.gradient-border {
+  --borderWidth: 10px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2); 
+  background: linear-gradient(60deg,  #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
 
-.color-ibox::before,
-.color-ibox::after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    width: calc(100% + 30px);
-    height: calc(100% + 30px);
-    top: -15px;
-    left: -15px;
-    border-radius: 27%;
-    background: linear-gradient(45deg,
-        #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
-        #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
-    );
-    background-size: 300%;
-    animation: border 12s linear infinite;
-}
 
-.color-ibox::after {
-    filter: blur(50px);
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-
-@keyframes border {
-    0%, 100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 300%;
-    }
-}
+  /*END OF TEMPORARY*/
+  
   /*//color-container*/
   /*CONTENT WRAPPER */
   #content-wrapper {
